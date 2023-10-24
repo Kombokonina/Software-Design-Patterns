@@ -8,4 +8,8 @@ public class TeethCleaningDecorator implements ServiceDecorator {
         service.performService();
         System.out.println("Performing additional service: Teeth Cleaning");
     }
+    @Override
+    public String getDescription() {
+        return "Teeth Cleaning";
+    }
 }

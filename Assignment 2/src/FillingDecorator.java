@@ -8,4 +8,8 @@ public class FillingDecorator implements ServiceDecorator {
         service.performService();
         System.out.println("Performing additional service: Filling");
     }
+    @Override
+    public String getDescription() {
+        return "Filling";
+    }
 }
